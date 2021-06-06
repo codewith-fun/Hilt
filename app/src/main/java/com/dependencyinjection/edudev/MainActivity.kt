@@ -6,7 +6,7 @@ import android.widget.TextView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {// addde all
     var datas: String ="pal G"
     lateinit var  testt : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
