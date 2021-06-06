@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.dependencyinjection.edudev.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+import javax.inject.Singleton
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         
     }
 
-
+    @Singleton// fyn when we inject in activity
     class SomeClass
     @Inject
     constructor(val someOtherClass: SomeOtherClass){
